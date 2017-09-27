@@ -9,20 +9,14 @@ import (
 )
 
 func main() {
+
 	request := `
-        {
-            "query": {
-                "nested": {
-					"path": "alliance",
-					"query": {
-						"match": {
-							"name": "Songtree"
-						}
-					}
-				}
-            }
-        }
-    `
+		{
+			"query": {
+				"match": { "alliance.name": "Gargoylechecker" }
+			}
+		}
+	`
 
 	body := strings.NewReader(request)
 	req, err := http.NewRequest("GET", "http://0.0.0.0:9222/socialpoint/players/_search", body)
@@ -47,11 +41,3 @@ func main() {
 		log.Printf("#%v", err)
 	}
 }
-
-//request := `
-//    {
-//        "query": {
-//            "match": { "alliance.name": "Serpentsour" }
-//        }
-//    }
-//`

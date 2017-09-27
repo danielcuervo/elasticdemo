@@ -15,7 +15,7 @@ func main() {
 	        "query": {
 	            "query_string": {
 					"default_field": "alliance.name",
-					"query": "Song* AND *tree"
+					"query": "Garg* AND *cker"
 				}
 	        }
 	    }
