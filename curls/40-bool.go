@@ -46,18 +46,3 @@ func main() {
 		log.Printf("#%v", err)
 	}
 }
-
-//"must": {
-//	"match": {
-//		"level": 20
-//	}
-//},
-
-//"must": {
-//	"range": {
-//		"level": {
-//			"gte": 10,
-//			"lte": 10,
-//		}
-//	}
-//},

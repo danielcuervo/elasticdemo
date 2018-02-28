@@ -11,7 +11,7 @@ import (
 func main() {
 	request := `
 	    {
-	"size": 400,
+			"size": 400,
 	        "query": {
 	            "bool": {
 					"must": {},
